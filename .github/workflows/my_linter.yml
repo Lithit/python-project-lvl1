@@ -1,0 +1,9 @@
+name: my_linter
+on: push
+jobs:
+  build:
+runs-on: ubuntu-latest
+steps:
+  - name: my-step
+    run: potry run flake8 brain_games
+
