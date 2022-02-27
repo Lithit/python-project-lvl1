@@ -12,5 +12,5 @@ jobs:
           make install
       - name: Run linter
         run: |
-          make lint
+          poetry run flake8 brain_games
 
