@@ -8,5 +8,5 @@ def main():
     get_engine_game(brain_gcd)
 
 
-    if __name__ == '__main__':
-        main()
+if __name__ == '__main__':
+    main()
