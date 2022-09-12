@@ -17,7 +17,8 @@ def get_engine_game(games):
             print('Correct!')
         if user_answer != answer:
             print(
-                f"'{user_answer}' is wrong answer ;(. Correct answer was '{answer}'. "
+                f"'{user_answer}' is wrong answer ;(. \
+Correct answer was '{answer}'. "
                 f"Let's try again, {username}!"
             )
             return
