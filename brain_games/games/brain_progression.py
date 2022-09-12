@@ -1,12 +1,12 @@
-
 from random import randint
 
 TASK = "What number is missing in the progression?"
 
+
 def get_round():
-    start = randint(1, 30)
-    step = randint(1, 5)
-    lenght_pr = randint(6, 9)
+    start = randint(1, 50)
+    step = randint(1, 20)
+    lenght_pr = 10
     progression = list(range(start, (start + lenght_pr * step), step))
     index = randint(0, lenght_pr)
     answer = progression[index]

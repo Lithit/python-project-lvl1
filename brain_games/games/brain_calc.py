@@ -1,6 +1,10 @@
+#!/usr/bin/env python3
+
 import random
 import operator
+
 TASK = "What is the result of the expression?"
+
 
 def get_round():
     operand1 = random.randint(1, 10)

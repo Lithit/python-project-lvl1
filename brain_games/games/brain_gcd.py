@@ -1,8 +1,11 @@
+#!/usr/bin/env python3
+
 import random
 import math
 
 TASK = "Find the greatest common divisor of given numbers."
-    
+
+
 def get_round():
     num_1 = random.randint(1, 100)
     num_2 = random.randint(1, 100)
