@@ -3,22 +3,13 @@ from random import randint
 
 TASK = "What number is missing in the progression?"
 
-def prog(start, step, lenght_pr):
-    result = [start]
-    x = 0
-    while x < lenght_pr:
-        start = start + step
-        result.append(start)
-        x = x + 1
-    return result
-
 def get_round():
     start = randint(1, 30)
     step = randint(1, 5)
     lenght_pr = randint(6, 9)
-    f_num = prog(start, step, lenght_pr)
+    progression = list(range(start, (start + lenght_pr * step), step))
     index = randint(0, lenght_pr)
-    answer = f_num[index]
-    f_num[index] = '..'
-    question = ' '.join(map(str, f_num))
+    answer = progression[index]
+    progression[index] = '..'
+    question = ' '.join(map(str, progression))
     return question, str(answer)
