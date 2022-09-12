@@ -8,7 +8,7 @@ def get_round():
     step = randint(1, 20)
     lenght_pr = 10
     progression = list(range(start, (start + lenght_pr * step), step))
-    index = randint(0, lenght_pr)
+    index = randint(0, len(progression)
     answer = progression[index]
     progression[index] = '..'
     question = ' '.join(map(str, progression))
