@@ -12,7 +12,7 @@ def is_prime(num):
     return True
 
 
-def get_round():
+def get_question_answer():
     num = random.randint(2, 60)
     answer = 'yes' if is_prime(num) else 'no'
     return str(num), str(answer)

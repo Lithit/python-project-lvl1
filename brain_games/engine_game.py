@@ -10,17 +10,21 @@ def run_engine_game(games):
     print('Hello,', username + '!')
     
     print(games.TASK)
+    
     rounds_count = 3
+    
     for i in range(rounds_count):
-        question, answer = games.get_round()
+        question, answer = games.get_question_answer()
         print(f'Question: {question}')
         user_answer = prompt.string('Your answer: ')
+        print("Correct!")
+        
         if user_answer != answer:
             print(
-                f"'{user_answer}' is wrong answer ;(."
-                f" Correct answer was '{answer}'.\n"
-                f"Let's try again, {username}!"
-            )
-        print('Correct!')
-        return print(f"Congratulations, {username}!")
+            f"'{user_answer}' is wrong answer ;(."
+            f" Correct answer was '{answer}'.\n"
+            f"Let's try again, {username}!")
+            break
+        
+    print(f"Congratulations, {username}!")
     

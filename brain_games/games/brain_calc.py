@@ -6,7 +6,7 @@ import operator
 TASK = "What is the result of the expression?"
 
 
-def get_round():
+def get_question_answer():
     operand1 = random.randint(1, 10)
     operand2 = random.randint(1, 10)
     operations = {
