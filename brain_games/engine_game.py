@@ -25,6 +25,6 @@ def run_engine_game(games):
             f" Correct answer was '{answer}'.\n"
             f"Let's try again, {username}!")
             break
-        
-    print(f"Congratulations, {username}!")
-    
+
+        elif i == rounds_count - 1:
+            print(f"Congratulations, {username}!")
